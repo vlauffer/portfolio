@@ -9,11 +9,11 @@ import Navbar from './components/CustomNavbar';
 
 function App() {
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <div>
         <Navbar />
         <Route exact path = "/" component={Home} />
-        <Route path ="/contact" component={Contact}/>
+        {/* <Route path ="/contact" component={Contact}/> */}
       </div>
     </Router>
   );
