@@ -1,0 +1,11 @@
+.bg-dark {
+    background-color: #4fa7ff!important;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: rgb(25, 0, 253);
+}
+
+.brandName{
+    color: rgb(255, 255, 255)
+}
