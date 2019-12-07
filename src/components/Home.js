@@ -41,32 +41,54 @@ export default class Home extends Component {
 
                         <div className= "col-md-12 align-self-center">    
                             <h3>Hello! I'm</h3>
-                            <strong>Vincent Lauffer</strong>
-                            <h4>Product Strategy Advisor / Web App Developer / Designer</h4>
+                            <strong>Vincent      Lauffer</strong>
+                            <h4>Product Strategy Advisor  </h4>
+                            <h4>Web App Developer </h4>
                         </div>
                     </Col>
-                    <Col className="secondCol" xs={3} md={1}>
+                    <Col className="secondCol" xs={2} md={1}>
                         
                     </Col>
-                    <Col className="secondCol" xs={7} md={4}>
-                        <Image src="assets/vincent.jpg" roundedCircle={true} fluid/>
+                    <Col className="secondCol" xs={8} md={4}>
+
+                        <div className="d-flex justify-content-center">
+                            
+                            <Image src="assets/vincent.jpg" roundedCircle={true} fluid/>  
+                            
+                        </div>
+                        {/* <Image  src="assets/vincent.jpg" roundedCircle={true} fluid/> */}
                     </Col>
                 </Row>
-                <Row>
-                    <Container fluid ={false}>
+                <Row className="aboutRow">
+                    <Container className = "aboutContainer"fluid ={true}>
                         <Col xs= {12} sm = {12}>
-                            <h2>About Me</h2>
-                            <p>I want to build the next generation of great products​. I am recent graduate from Brandeis University, who majored in Business and minored in Computer Science. I love building web apps and games, and am actively looking to help out within the software development industry. I also love product strategy and want to make sure that customers get the respect they deserve within a development environment</p>
-                            <a href = "https://drive.google.com/file/d/1FQYBwglDmdV8H1-STwnoHVKAfP70VikO/view">View Full Resume</a>
+                            <h2>Here's what I love:</h2>
+                            <br></br>
+                            <br></br>
+                            <br></br>
+                            <Row>
+                                <Col xs= {12} sm= {4}>
+                                
+                                <Image src="assets/webdev.png" fluid  />
+                                <h5> Full-Stack Web App Developement</h5>
+                                </Col>
+                                <Col xs= {12} sm= {4}>
+                                
+                                <Image src="assets/pm.png" fluid />
+                                <h5> Product Management</h5>
+                                </Col>
+
+                                <Col xs= {12} sm= {4}>
+                                
+                                <Image src="assets/marketing.png" fluid />
+                                <h5>Marketing Analytics</h5>
+                                </Col>             
+                            </Row>
                         </Col>
                     </Container>
 
                 </Row>
-                <Row>
-                    <Container className="spacer">
-                        
-                    </Container>
-                </Row>
+                
                 <Row>
                     <Container className="portfolio">
                         <h2> Portfolio </h2>

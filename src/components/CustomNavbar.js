@@ -26,7 +26,7 @@ export default class CustomNavbar extends Component {
                     <Nav>
                         
                         <Button onClick={()=>this.makeComplement()}>Complement Button</Button>
-                        
+                        <Button variant= "warning" href="https://drive.google.com/file/d/1FQYBwglDmdV8H1-STwnoHVKAfP70VikO/view">View Full Resume</Button>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>
