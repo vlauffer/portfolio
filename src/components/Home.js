@@ -58,7 +58,7 @@ export default class Home extends Component {
 
                         <div className="d-flex justify-content-center">
                             
-                            <Image src="assets/vincent.jpg" roundedCircle={true} fluid/>  
+                            <Image src="assets/vincent.jpg" roundedCircle={true} />  
                             
                         </div>
                         {/* <Image  src="assets/vincent.jpg" roundedCircle={true} fluid/> */}
