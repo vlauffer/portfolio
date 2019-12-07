@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
 import {Jumbotron, Container, Row, Col, Image, Button, Card} from 'react-bootstrap'
 import './Home.css'
+import Typing from 'react-typing-animation';
+
 const webList=[{name: "WH3N", url:"https://wh3nfrontend.herokuapp.com", desc: ", a mobile-friendly way to organize meetings"},
 {name: "Nobee", url:"https://www.rentnobee.com/", desc: ", an easier way to find apartments in Waltham"},
 {name: "Slippery Melon", url:"https://imapopanyway.itch.io/slippery-melon", desc: ", a short game, if you can beat it :)"}
@@ -39,11 +41,14 @@ export default class Home extends Component {
                 <Row className= "splitter">
                     <Col className="firstCol" xs = {12} md={6}>
 
-                        <div className= "col-md-12 align-self-center">    
-                            <h3>Hello! I'm</h3>
-                            <strong>Vincent      Lauffer</strong>
-                            <h4>Product Strategy Advisor  </h4>
-                            <h4>Web App Developer </h4>
+                        <div className= "col-md-12 align-self-center">  
+                            <Typing>
+                                <h3>Hello! <Typing.Delay ms={800} />I'm <Typing.Delay ms={500} /></h3>
+                                <strong>Vincent     <Typing.Delay ms={200} /> Lauffer</strong>
+                                <h4>Product Strategy Advisor  </h4>
+                                <h4>Web App Developer </h4>
+                            </Typing>  
+                            
                         </div>
                     </Col>
                     <Col className="secondCol" xs={2} md={1}>
@@ -62,7 +67,11 @@ export default class Home extends Component {
                 <Row className="aboutRow">
                     <Container className = "aboutContainer"fluid ={true}>
                         <Col xs= {12} sm = {12}>
-                            <h2>Here's what I love:</h2>
+                            <Typing>
+                                <Typing.Delay ms={8000} />
+                                <h2>Here's what I love:</h2>
+                            </Typing>
+                            
                             <br></br>
                             <br></br>
                             <br></br>

@@ -22,7 +22,10 @@
     margin-left: 1%;
 }
 
-
+.navbar-nav .btn{
+    margin-right: 10px;
+    margin-left: 10px;
+}
 
 .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
     width: 100%;
