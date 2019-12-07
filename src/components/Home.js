@@ -56,12 +56,12 @@ export default class Home extends Component {
                     </Col>
                     <Col className="secondCol" xs={8} md={4}>
 
-                        <div className="d-flex justify-content-center">
+                        
                             
-                            <Image src="assets/vincent.jpg" roundedCircle={true} />  
+                        <Image src="assets/vincent.jpg" roundedCircle={true} />  
                             
-                        </div>
-                        {/* <Image  src="assets/vincent.jpg" roundedCircle={true} fluid/> */}
+                        
+                        
                     </Col>
                 </Row>
                 <Row className="aboutRow">
