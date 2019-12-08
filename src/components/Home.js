@@ -68,29 +68,32 @@ export default class Home extends Component {
                     <Container className = "aboutContainer"fluid ={true}>
                         <Col xs= {12} sm = {12}>
                             <Typing>
-                                <Typing.Delay ms={8000} />
+                                <Typing.Delay ms={9000} />
                                 <h2>Here's what I love:</h2>
                             </Typing>
                             
                             <br></br>
                             <br></br>
                             <br></br>
-                            <Row>
+                            <Row className="aboutRow2">
                                 <Col xs= {12} sm= {4}>
                                 
                                 <Image src="assets/webdev.png" fluid  />
-                                <h5> Full-Stack Web App Developement</h5>
+                                <h5> Web App Developement</h5>
+                                <p>Knowledge of React.js, Node.js, PostgreSQL, GitHub and more! </p>
                                 </Col>
                                 <Col xs= {12} sm= {4}>
                                 
                                 <Image src="assets/pm.png" fluid />
                                 <h5> Product Management</h5>
+                                <p>I make sure that the right product is made for the right customer </p>
                                 </Col>
 
                                 <Col xs= {12} sm= {4}>
                                 
                                 <Image src="assets/marketing.png" fluid />
                                 <h5>Marketing Analytics</h5>
+                                <p>Customer, discovery, segmentation and analysis   </p>
                                 </Col>             
                             </Row>
                         </Col>

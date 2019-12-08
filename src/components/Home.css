@@ -1,11 +1,11 @@
 .container{
-    background-color:rgb(88, 171, 241);
+    /* background-color:rgb(88, 171, 241); */
     text-align: center;
     padding-bottom: 40px;
 }
 
 .container a{
-    color: rgb(248, 186, 14);
+    color: rgb(255, 232, 104);
     padding-bottom: 4px;
     font-size: 20px;
 
@@ -37,7 +37,7 @@
 }
 
 h3{
-    color: yellow;
+    color: rgb(255, 226, 95);
     /* margin-left: 10vw; */
     margin-top: 5vh;
     vertical-align: center;
@@ -86,8 +86,8 @@ body{
 
 .container-fluid{
     background: rgb(87, 172, 241);
-    background: -webkit-linear-gradient(to right, #de6161,#2657eb);
-    background: linear-gradient(to right, #de6161, #2657eb);
+    background: -webkit-linear-gradient(to right, #005c97,  #363795);
+    background: linear-gradient(to right, #005c97,  #363795);
     margin-right: 0px;
 }
 
@@ -95,7 +95,27 @@ body{
     background-color: rgb(255, 255, 255);
 }
 
+.aboutRow2{
+    margin-left: 20px;
+    margin-right: 20px;
+}
 
+.aboutRow2 .col-sm-4{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.aboutRow2 img {
+    max-height: 60%;
+    max-width: 60%;
+    size: 1px;
+    /* padding-top: 20px;
+    padding-bottom: 20px; */
+}
+
+.aboutRow2 p{
+    text-align: center;
+}
 
 .card-img-top{
     
@@ -111,13 +131,15 @@ body{
 img{
     max-height: 100%;
     max-width: 100%;
-    size: 3vw;
+    size: 1px;
     padding-top: 20px;
     padding-bottom: 20px;
     
     /* padding-left: 20px;
     align-self: center; */
 }
+
+
 
 
 
@@ -136,9 +158,9 @@ p{
 
 
 .portfolio{
-    background-color:rgb(88, 171, 241);
+    /* background-color:rgb(88, 171, 241);
     background: -webkit-linear-gradient(to right,#00b4db, #014d94);
-    background: linear-gradient(to right, #00b4db, #014d94);
+    background: linear-gradient(to right, #00b4db, #014d94); */
 }
 
 .portfolio h2{
