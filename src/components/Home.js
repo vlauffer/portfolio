@@ -4,13 +4,13 @@ import {Jumbotron, Container, Row, Col, Image, Button, Card} from 'react-bootstr
 import './Home.css'
 import Typing from 'react-typing-animation';
 
-const webList=[{name: "WH3N", url:"https://wh3nfrontend.herokuapp.com", desc: ", a mobile-friendly way to organize meetings"},
-{name: "Nobee", url:"https://www.rentnobee.com/", desc: ", an easier way to find apartments in Waltham"},
-{name: "Slippery Melon", url:"https://imapopanyway.itch.io/slippery-melon", desc: ", a short game, if you can beat it :)"}
+const webList=[{name: "WH3N", url:"https://wh3nfrontend.herokuapp.com", img: "assets/wh3npic.jpg", desc: ", a mobile-friendly way to organize meetings"},
+{name: "Nobee", url:"https://www.rentnobee.com/", img: "assets/house.png", desc: ", an easier way to find apartments in Waltham"},
+{name: "Slippery Melon", url:"https://imapopanyway.itch.io/slippery-melon", img: "assets/Melon2.png", desc: ", a short game, if you can beat it :)"}
 ]
-const busList=[{name: "NRG Marketing Strategy", url:"https://drive.google.com/file/d/1WhOo_pWgJ7RCqARoTyJTbz9JvIs7Z1Yx/view", desc: ""},
-{name: "Boeing Case Competition", url:"https://drive.google.com/file/d/151Bm_cB6hmy8T3HbvG5_sKMYzNALncpZ/view", desc: ""},
-{name: "Xiaomi's Feature Phone in India", url:"https://drive.google.com/file/d/1v9Z-ykPJeEeWVkC4rcZUM-BzM0cRsUsG/view", desc: ""}
+const busList=[{name: "NRG Marketing Strategy", url:"https://drive.google.com/file/d/1WhOo_pWgJ7RCqARoTyJTbz9JvIs7Z1Yx/view", img: "assets/nrg.png", desc: ""},
+{name: "Boeing Case Competition", url:"https://drive.google.com/file/d/151Bm_cB6hmy8T3HbvG5_sKMYzNALncpZ/view",  img: "assets/boeing.png", desc: ""},
+{name: "Xiaomi's Feature Phone in India", url:"https://drive.google.com/file/d/1v9Z-ykPJeEeWVkC4rcZUM-BzM0cRsUsG/view",img: "assets/xmi.png", desc: ""}
 ]
 
 export default class Home extends Component {
@@ -24,11 +24,23 @@ export default class Home extends Component {
     makeList(list){
 
         return (
-            <ul>
+            <>
                 {list.map((value, index) => {
-                    return <li key={index}><a href={value.url}>{value.name}</a>{value.desc}</li>
+
+                    return <Col key = {index} xs={6} sm={4}>
+                        <a className = "imageText" href={value.url}>
+
+                            <Image src= {value.img} />
+                            <h1><span>{value.name}{value.desc}</span></h1>
+                        </a>
+                    </Col>
+                     
+                    
+                    
+                    
+                    // <li key={index}><a href={value.url}>{value.name}</a>{value.desc}</li>
                 })}
-            </ul>
+            </>
         );
 
     }
@@ -103,12 +115,18 @@ export default class Home extends Component {
                 
                 <Row>
                     <Container className="portfolio">
-                        <h2> Portfolio </h2>
-                        <h3>Web Apps</h3>
-                        {this.makeList(webList)}
-
-                        <h3>Product Strategy and Marketing Analysis</h3>
-                        {this.makeList(busList)}
+                        
+                        <h2>Web Apps</h2>
+                        <Row>
+                            {this.makeList(webList)}
+                        </Row>
+                        
+                        
+                        <h2>Product Strategy and Marketing Analysis</h2>
+                        <Row>
+                            {this.makeList(busList)}
+                        </Row>
+                        
 
                     </Container>
                 </Row>

@@ -84,6 +84,40 @@ body{
     text-align: center;
 }
 
+
+
+.portfolio h1{
+    position: absolute; 
+    top: 0%; 
+    left: 0; 
+    width: 100%; 
+    line-height: 20px;
+}
+
+.portfolio h1 span{
+    color: white; 
+    /* font: bold 24px/45px Helvetica, Sans-Serif;  */
+    
+    background: rgb(0, 0, 0); 
+    background: rgba(0, 0, 0, 1);
+    padding: 10px; 
+    font-size: small;
+    visibility:hidden;
+
+   
+}
+
+.portfolio .imageText{
+    position: relative; 
+    /* width: 100%; for IE 6 */
+}
+
+.imageText:hover h1 span {
+    visibility:visible;
+}
+
+
+
 .container-fluid{
     background: rgb(87, 172, 241);
     background: -webkit-linear-gradient(to right, #005c97,  #363795);
