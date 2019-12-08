@@ -17,10 +17,7 @@ export default class Home extends Component {
 
     
 
-    constructor(props){
-        super(props)
-    }
-
+    
     makeList(list){
 
         return (
@@ -34,10 +31,6 @@ export default class Home extends Component {
                             <h1><span>{value.name}{value.desc}</span></h1>
                         </a>
                     </Col>
-                     
-                    
-                    
-                    
                     // <li key={index}><a href={value.url}>{value.name}</a>{value.desc}</li>
                 })}
             </>
@@ -55,8 +48,9 @@ export default class Home extends Component {
 
                         <div className= "col-md-12 align-self-center">  
                             <Typing>
-                                <h3>Hello! <Typing.Delay ms={800} />I'm <Typing.Delay ms={500} /></h3>
-                                <strong>Vincent     <Typing.Delay ms={200} /> Lauffer</strong>
+                                <h3>Hello! <Typing.Delay ms={800}/>I'm <Typing.Delay ms={500} /></h3>
+                                <strong>Vincent Lauffer</strong>
+                                <Typing.Delay ms={200}/>
                                 <h4>Product Strategy Advisor  </h4>
                                 <h4>Web App Developer </h4>
                             </Typing>  
@@ -66,24 +60,16 @@ export default class Home extends Component {
                     <Col className="secondCol" xs={2} md={1}>
                         
                     </Col>
-                    <Col className="secondCol" xs={8} md={4}>
-
-                        
-                            
-                        <Image src="assets/vincent.jpg" roundedCircle={true} />  
-                            
-                        
-                        
+                    <Col className="secondCol" xs={8} md={4}>                 
+                        <Image src="assets/vincent.jpg" roundedCircle={true} />     
                     </Col>
                 </Row>
                 <Row className="aboutRow">
                     <Container className = "aboutContainer"fluid ={true}>
                         <Col xs= {12} sm = {12}>
-                            <Typing>
-                                <Typing.Delay ms={9000} />
-                                <h2>Here's what I love:</h2>
-                            </Typing>
                             
+                             <h2>Here's what I love:</h2>
+
                             <br></br>
                             <br></br>
                             <br></br>
