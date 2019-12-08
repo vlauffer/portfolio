@@ -20,14 +20,14 @@ export default class CustomNavbar extends Component {
             <Navbar bg="dark" expand="sm">
                 
                 <Navbar.Brand href="/">
-                    <div className="brandName">Vincent Lauffer</div>
+                    <div className="brandName">VL</div>
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
             
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav>
                         
-                        <Button onClick={()=>this.makeComplement()}>Complement Button</Button>
+                        <Button onClick={()=>this.makeComplement()}>Recieve a Complement</Button>
                         <Button variant= "warning" href="https://drive.google.com/file/d/1FQYBwglDmdV8H1-STwnoHVKAfP70VikO/view">View Full Resume</Button>
                         <Button variant= "primary" href="https://www.linkedin.com/in/vincent-lauffer-391317119/">Connect on LinkedIn</Button>
                     </Nav>

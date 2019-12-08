@@ -117,7 +117,6 @@ body{
 }
 
 
-
 .container-fluid{
     background: rgb(87, 172, 241);
     background: -webkit-linear-gradient(to right, #005c97,  #363795);
@@ -140,15 +139,30 @@ body{
 }
 
 .aboutRow2 img {
-    max-height: 60%;
+    /* max-height: 60%;
     max-width: 60%;
-    size: 1px;
-    /* padding-top: 20px;
-    padding-bottom: 20px; */
+    size: 1px; */
+    
+    position: relative;
+    /* float: left; */
+    width:  60%;
+    /* height: 70%; */
+    background-position: 50% 50%;
+    background-repeat:   no-repeat;
+    background-size:     cover;
 }
 
 .aboutRow2 p{
     text-align: center;
+}
+
+.portfolio img{
+    position: relative;
+    width:  80%;
+    height: 100%;
+    background-position: 50% 50%;
+    background-repeat:   no-repeat;
+    background-size:     cover;
 }
 
 .card-img-top{
