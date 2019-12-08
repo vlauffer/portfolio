@@ -76,20 +76,20 @@ export default class Home extends Component {
                             <Row className="aboutRow2">
                                 <Col xs= {12} sm= {4}>
                                 
-                                <Image src="assets/webdev.png" fluid  />
+                                <Image src="assets/webdev.png"   />
                                 <h5> Web App Developement</h5>
                                 <p>Knowledge of React.js, Node.js, PostgreSQL, GitHub and more! </p>
                                 </Col>
                                 <Col xs= {12} sm= {4}>
                                 
-                                <Image src="assets/pm.png" fluid />
+                                <Image src="assets/pm.png" />
                                 <h5> Product Management</h5>
                                 <p>I make sure that the right product is made for the right customer </p>
                                 </Col>
 
                                 <Col xs= {12} sm= {4}>
                                 
-                                <Image src="assets/marketing.png" fluid />
+                                <Image src="assets/marketing.png"  />
                                 <h5>Marketing Analytics</h5>
                                 <p>Customer, discovery, segmentation and analysis   </p>
                                 </Col>             
