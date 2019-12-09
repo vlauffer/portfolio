@@ -51,7 +51,8 @@ export default class Home extends Component {
                                 <h3>Hello! <Typing.Delay ms={800}/>I'm <Typing.Delay ms={500} /></h3>
                                 <strong>Vincent Lauffer</strong>
                                 <Typing.Delay ms={200}/>
-                                <h4>Product Strategy Advisor  </h4>
+                                <h4>Digital Marketer </h4>
+                                <h4>Product Strategist </h4>
                                 <h4>Web App Developer </h4>
                             </Typing>  
                             
