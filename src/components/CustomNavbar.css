@@ -16,3 +16,8 @@
     padding-top: 0;
     padding-bottom: 0;
 }
+
+.navbar-toggler{
+    background-color: rgb(134, 134, 134);
+    color: white;
+}
