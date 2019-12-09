@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import {Link} from 'react-router-dom';
-import {Jumbotron, Container, Row, Col, Image, Button, Card} from 'react-bootstrap'
+
+import { Container, Row, Col, Image} from 'react-bootstrap'
 import './Home.css'
 import Typing from 'react-typing-animation';
 

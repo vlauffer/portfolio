@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import {Navbar, Nav, NavItem, Button, Alert} from 'react-bootstrap'
-import {Link} from 'react-router-dom'
+import {Navbar, Nav,  Button,Image} from 'react-bootstrap'
+
 import './CustomNavbar.css'
 const complements=["You smell great!", "I am really proud of you", "I love your smile", "You look great today",
 "You’re like sunshine on a rainy day", "You're wonderful", "You're like sunshine on a rainy day","You always know how to find that silver lining",
@@ -20,7 +20,7 @@ export default class CustomNavbar extends Component {
             <Navbar bg="dark" expand="sm">
                 
                 <Navbar.Brand href="/">
-                    <div className="brandName">VL</div>
+                    <Image src = "assets/navbaricon.png" width = {30} />
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
             

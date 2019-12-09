@@ -1,5 +1,5 @@
 .bg-dark {
-    background-color: #4fa7ff!important;
+    background-color: #014996!important;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -8,4 +8,11 @@
 
 .brandName{
     color: rgb(255, 255, 255)
+}
+
+.navbar-brand img{
+    padding-right: 0;
+    padding-left: 0;
+    padding-top: 0;
+    padding-bottom: 0;
 }
