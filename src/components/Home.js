@@ -1,12 +1,16 @@
 import React, { Component } from 'react';
 
 import { Container, Row, Col, Image} from 'react-bootstrap'
-import './Home.css'
+import './Home.css';
 import Typing from 'react-typing-animation';
+import Project from "./Project";
 
-const webList=[{name: "WH3N", url:"https://wh3nfrontend.herokuapp.com", img: "assets/wh3npic.jpg", desc: ", a mobile-friendly way to organize meetings"},
-{name: "Nobee", url:"https://www.rentnobee.com/", img: "assets/house.png", desc: ", an easier way to find apartments in Waltham"},
-{name: "Slippery Melon", url:"https://imapopanyway.itch.io/slippery-melon", img: "assets/Melon2.png", desc: ", a short game, if you can beat it :)"}
+
+
+
+const webList=[{name: "WH3N", url:"https://wh3nfrontend.herokuapp.com", img: "assets/wh3npic.jpg", desc: ": a mobile-friendly solution for organizing meetings"},
+{name: "Nobee", url:"https://www.rentnobee.com/", img: "assets/house.png", desc: ": an easier way to find apartments in Waltham"},
+{name: "Slippery Melon", url:"https://imapopanyway.itch.io/slippery-melon", img: "assets/Melon2.png", desc: ": a short game, if you can beat it :)"}
 ]
 const busList=[{name: "NRG Marketing Strategy", url:"https://drive.google.com/file/d/1WhOo_pWgJ7RCqARoTyJTbz9JvIs7Z1Yx/view", img: "assets/nrg.png", desc: ""},
 {name: "Boeing Case Competition", url:"https://drive.google.com/file/d/151Bm_cB6hmy8T3HbvG5_sKMYzNALncpZ/view",  img: "assets/boeing.png", desc: ""},
@@ -20,18 +24,21 @@ export default class Home extends Component {
     
     makeList(list){
 
+
         return (
             <>
                 {list.map((value, index) => {
-
-                    return <Col key = {index} xs={6} sm={4}>
-                        <a className = "imageText" href={value.url}>
-
-                            <Image src= {value.img} />
-                            <h1><span>{value.name}{value.desc}</span></h1>
+                    return <Col key = {index} xs={12} sm={6} md={4}>
+                        <a className = "imageLink" href={value.url}>
+                            <Project img = {value.img}
+                                name = {value.name}
+                                desc = {value.desc}
+                                
+                            />
+                            {/* <Image src= {value.img} />
+                            <h1><span>{value.name}{value.desc}</span></h1> */}
                         </a>
                     </Col>
-                    // <li key={index}><a href={value.url}>{value.name}</a>{value.desc}</li>
                 })}
             </>
         );
@@ -73,6 +80,7 @@ export default class Home extends Component {
 
                             <br></br>
                             <br></br>
+                            
                             <br></br>
                             <Row className="aboutRow2">
                                 <Col xs= {12} sm= {4}>
@@ -92,7 +100,7 @@ export default class Home extends Component {
                                 
                                 <Image src="assets/marketing.png"  />
                                 <h5>Marketing Analytics</h5>
-                                <p>Customer, discovery, segmentation and analysis   </p>
+                                <p>Customer discovery, segmentation and analysis   </p>
                                 </Col>             
                             </Row>
                         </Col>
@@ -103,18 +111,20 @@ export default class Home extends Component {
                 <Row>
                     <Container className="portfolio">
                         
+                    <Col xs= {12} sm = {12}>
+                            
                         <h2>Web Apps</h2>
-                        <Row>
-                            {this.makeList(webList)}
+                        <Row className="webApps">
+                            {this.makeList(webList)}  
                         </Row>
                         
-                        
-                        <h2>Product Strategy and Marketing Analysis</h2>
+                        <h2>Product Strategy and Marketing Analysis</h2>    
                         <Row>
                             {this.makeList(busList)}
                         </Row>
-                        
-
+                    
+                    </Col>
+                    
                     </Container>
                 </Row>
 

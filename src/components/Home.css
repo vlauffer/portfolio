@@ -36,6 +36,8 @@
     background-color: aqua;
 }
 
+
+
 h3{
     color: rgb(255, 226, 95);
     /* margin-left: 10vw; */
@@ -157,12 +159,12 @@ body{
 }
 
 .portfolio img{
-    position: relative;
+    /* position: relative;
     width:  80%;
     height: 100%;
     background-position: 50% 50%;
     background-repeat:   no-repeat;
-    background-size:     cover;
+    background-size:     cover; */
 }
 
 .card-img-top{
@@ -205,11 +207,6 @@ p{
 }
 
 
-.portfolio{
-    /* background-color:rgb(88, 171, 241);
-    background: -webkit-linear-gradient(to right,#00b4db, #014d94);
-    background: linear-gradient(to right, #00b4db, #014d94); */
-}
 
 .portfolio h2{
     /* background-color:black; */
@@ -229,10 +226,10 @@ p{
 
 .portfolio ul{
     /* background-color:black; */
-    margin-left: 0;
+    /* margin-left: 0;
     text-align: left;
     color: beige;
-    font-size: 22px;
+    font-size: 22px; */
 
 }
 
