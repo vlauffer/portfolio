@@ -2,6 +2,7 @@
     /* background-color:rgb(88, 171, 241); */
     text-align: center;
     padding-bottom: 40px;
+    display: flex;
 }
 
 .container a{
@@ -64,8 +65,12 @@ h4{
 }
 
 h5{
-    color: white;
-    font-weight: 600;
+    color: rgb(255, 255, 255);
+    font-weight: 900;
+}
+
+.aboutRow h5{
+    font-weight: 900;
 }
 
 strong{
@@ -86,7 +91,9 @@ body{
     text-align: center;
 }
 
-
+.portfolio{
+    
+}
 
 .portfolio h1{
     position: absolute; 

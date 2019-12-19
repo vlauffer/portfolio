@@ -28,7 +28,7 @@ export default class Home extends Component {
         return (
             <>
                 {list.map((value, index) => {
-                    return <Col key = {index} xs={12} sm={6} md={4}>
+                    return <Col key = {index} xs={12} sm={4} md={4}>
                         <a className = "imageLink" href={value.url}>
                             <Project img = {value.img}
                                 name = {value.name}
@@ -57,10 +57,7 @@ export default class Home extends Component {
                             <Typing>
                                 <h3>Hello! <Typing.Delay ms={800}/>I'm <Typing.Delay ms={500} /></h3>
                                 <strong>Vincent Lauffer</strong>
-                                <Typing.Delay ms={200}/>
-                                <h4>Digital Marketer </h4>
-                                <h4>Product Strategist </h4>
-                                <h4>Web App Developer </h4>
+                                
                             </Typing>  
                             
                         </div>
@@ -93,7 +90,7 @@ export default class Home extends Component {
                                 
                                 <Image src="assets/pm.png" />
                                 <h5> Product Management</h5>
-                                <p>I make sure that the right product is made for the right customer </p>
+                                <p>I love buidling things that make people smile </p>
                                 </Col>
 
                                 <Col xs= {12} sm= {4}>
