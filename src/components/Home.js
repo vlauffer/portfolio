@@ -90,7 +90,7 @@ export default class Home extends Component {
                                 
                                 <Image src="assets/pm.png" />
                                 <h5> Product Management</h5>
-                                <p>I love buidling things that make people smile </p>
+                                <p>I love building things that make people smile </p>
                                 </Col>
 
                                 <Col xs= {12} sm= {4}>
