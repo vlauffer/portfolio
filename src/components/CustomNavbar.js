@@ -27,7 +27,7 @@ export default class CustomNavbar extends Component {
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav>
                         
-                        <Button onClick={()=>this.makeComplement()}>Recieve a Compliment</Button>
+                        <Button onClick={()=>this.makeComplement()}>Receive a Compliment</Button>
                         <Button variant= "warning" href="https://drive.google.com/file/d/0B7tcaaZzyLYxSFAwZzVpMk1KUTNNdnZ3WW9iaFVSd0tKcnZJ/view?usp=sharing">View Full Resume</Button>
                         <Button variant= "primary" href="https://www.linkedin.com/in/vincent-lauffer-391317119/">Connect on LinkedIn</Button>
                     </Nav>
