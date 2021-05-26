@@ -6,6 +6,7 @@ const complements=["You smell great!", "I am really proud of you", "I love your 
 "You’re like sunshine on a rainy day", "You're wonderful", "You're like sunshine on a rainy day","You always know how to find that silver lining",
 "You're inspiring","You're a smart cookie","The people you love are lucky to have you in their lives",
 "Your hair looks stunning","On a scale from 1 to 10, you're an 11","You're really something special","Where is the nearest Chipotle?"];
+const resumeLink = "https://drive.google.com/file/d/1X954NTIu21SfKRXEs7fk0Cwp_4VCLVhl/view?usp=sharing";
 
 export default class CustomNavbar extends Component {
 
@@ -28,7 +29,7 @@ export default class CustomNavbar extends Component {
                     <Nav>
                         
                         <Button onClick={()=>this.makeComplement()}>Receive a Compliment</Button>
-                        <Button variant= "warning" href="https://drive.google.com/file/d/0B7tcaaZzyLYxSFAwZzVpMk1KUTNNdnZ3WW9iaFVSd0tKcnZJ/view?usp=sharing">View Full Resume</Button>
+                        <Button variant= "warning" href={resumeLink}>View Full Resume</Button>
                         <Button variant= "primary" href="https://www.linkedin.com/in/vincent-lauffer-391317119/">Connect on LinkedIn</Button>
                     </Nav>
                 </Navbar.Collapse>

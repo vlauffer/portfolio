@@ -66,7 +66,7 @@ export default class Home extends Component {
                         
                     </Col>
                     <Col className="secondCol" xs={8} md={4}>                 
-                        <Image src="assets/vincent.jpg" roundedCircle={true} />     
+                        <Image src="assets/vincent.jpg" roundedCircle= {true} />     
                     </Col>
                 </Row>
                 <Row className="aboutRow">
