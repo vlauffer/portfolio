@@ -6,7 +6,7 @@ const complements=["You smell great!", "I am really proud of you", "I love your 
 "You’re like sunshine on a rainy day", "You're wonderful", "You're like sunshine on a rainy day","You always know how to find that silver lining",
 "You're inspiring","You're a smart cookie","The people you love are lucky to have you in their lives",
 "Your hair looks stunning","On a scale from 1 to 10, you're an 11","You're really something special","Where is the nearest Chipotle?"];
-const resumeLink = "https://drive.google.com/file/d/1V0Cai9b6fIcCUtfBNZeKdIuAnAGjG9Z-/view?usp=sharing";
+const resumeLink = "https://drive.google.com/file/d/1X954NTIu21SfKRXEs7fk0Cwp_4VCLVhl/view?usp=sharing";
 
 export default class CustomNavbar extends Component {
 
