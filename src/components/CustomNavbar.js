@@ -29,7 +29,7 @@ export default class CustomNavbar extends Component {
                     <Nav>
                         
                         <Button onClick={()=>this.makeComplement()}>Receive a Compliment</Button>
-                        <Button variant= "warning" href={resumeLink}>View Full Resume</Button>
+                        {/* <Button variant= "warning" href={resumeLink}>View Full Resume</Button> */}
                         <Button variant= "primary" href="https://www.linkedin.com/in/vincent-lauffer-391317119/">Connect on LinkedIn</Button>
                     </Nav>
                 </Navbar.Collapse>
